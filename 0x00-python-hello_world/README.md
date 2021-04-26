@@ -30,12 +30,12 @@ Write a Shell script that runs a Python script.
 The Python file name will be saved in the environment variable  `$PYFILE`
 
 
-### Run inline
+### 1. Run inline
 Write a Shell script that runs Python code.
 
 The Python code will be saved in the environment variable  `$PYCODE`
 
-### Hello, print
+### 2. Hello, print
 
 Write a Python script that prints exactly `"Programming is like building a multilingual puzzle`, followed by a new line.
 -   Use the function  `print`
@@ -52,7 +52,7 @@ Complete this  [source code](https://github.com/holbertonschool/0x00.py/blob/mas
 	-   Your code must be 3 lines long
 	-   You have to use the new print numbers  [tips](https://intranet.hbtn.io/rltoken/k33L_JH5NMcE3c4LsUkVlA "tips")  (with  `.format(...)`)
 
-### Print float
+### 4. Print float
 
 Complete the source code in order to print the float stored in the variable  `number`  with a precision of 2 digits.
 
@@ -76,7 +76,7 @@ Complete this  [source code](https://github.com/holbertonschool/0x00.py/blob/mas
 		-   You are not allowed to use any loops or conditional statement
 		-   Your program should be maximum 5 lines long
 
-### Play with strings
+### 6. Play with strings
 
 Complete this  [source code](https://github.com/holbertonschool/0x00.py/blob/master/6-concat.py "source code")  to print  `Welcome to Holberton School!`
 
@@ -85,7 +85,7 @@ Complete this  [source code](https://github.com/holbertonschool/0x00.py/blob/mas
 -   You have to use the variables  `str1`  and  `str2`  in your new line of code
 -   Your program should be exactly 5 lines long
 
-### Copy - Cut - Paste
+### 7. Copy - Cut - Paste
 
 Complete this  [source code](https://github.com/holbertonschool/0x00.py/blob/master/7-edges.py "source code")
 
@@ -96,7 +96,7 @@ Complete this  [source code](https://github.com/holbertonschool/0x00.py/blob/mas
 -   `word_last_2`  should contain the last 2 letters of the variable  `word`
 -   `middle_word`  should contain the value of the variable  `word`  without the first and last letters
 
-### Create a new sentence
+### 8. Create a new sentence
 
 Complete this  [source code](https://github.com/holbertonschool/0x00.py/blob/master/8-concat_edges.py "source code")  to print  `object-oriented programming with Python`, followed by a new line.
 
@@ -106,13 +106,13 @@ Complete this  [source code](https://github.com/holbertonschool/0x00.py/blob/mas
 -   You are not allowed to create new variables
 -   You are not allowed to use string literals
 
-### Easter Egg
+### 9. Easter Egg
 
 Write a Python script that prints The Zen of Python, by TimPeters, followed by a new line.
 
 -   Your script should be maximum 98 characters long (please check with  `wc -m 9-easter_egg.py`)
 
-### Linked list cycle
+### 10. Linked list cycle
 
 **Technical interview preparation**:
 
