@@ -2,8 +2,8 @@
 import random
 number = random.randint(-10000, 10000)
 if number < 0:
-    number2 = number % 10
-    last = number % 10
+    number2 = number * -1
+    last = number2 % 10
     last = last * -1
 elif number >= 0:
     last = number % 10
