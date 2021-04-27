@@ -4,7 +4,7 @@ Foundations - Higher-level programming  Python
 
 By Guillaume, CTO at Holberton School
 
-##Learning Objectives
+# Learning Objectives
 
 General 
 
