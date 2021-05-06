@@ -1,4 +1,4 @@
-# 0x04. Pytho- More Data Structures: Set, Dictionary
+# 0x04. Python- More Data Structures: Set, Dictionary
 
 Foundations - Higher-level programming  Python
 
