@@ -17,7 +17,10 @@ int is_palindrome(listint_t **head)
 	int even_odd = 0;
 	char numbers[100];
 
-	if (head == NULL || head == NULL)
+	if (head == NULL)
+		return (0);
+
+	if (*head == NULL)
 		return (1);
 
 	tmp = *head;
