@@ -31,6 +31,8 @@ int is_palindrome(listint_t **head)
 		tmp = tmp->next;
 	}
 	i--;
+	if (i == 0)
+		return (1);
 	if (i % 2 == 0)
 		even_odd = 2;
 	else
