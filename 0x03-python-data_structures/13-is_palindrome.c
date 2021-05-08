@@ -14,10 +14,11 @@ int is_palindrome(listint_t **head)
 	listint_t *tmp;
 	int i = 0;
 	int j = 0;
+	int even_odd = 0;
 	char numbers[100];
 
-	if (head == NULL)
-		return (0);
+	if (head == NULL || head == NULL)
+		return (1);
 
 	tmp = *head;
 	while (tmp != NULL)
@@ -27,11 +28,15 @@ int is_palindrome(listint_t **head)
 		tmp = tmp->next;
 	}
 	i--;
+	if (i % 2 == 0)
+		even_odd = 2;
+	else
+		even_odd = 1;
 	while (j <= i)
 	{
 		if (numbers[j] != numbers[i])
 			return (0);
-		else if (j == i - 1)
+		else if (j == i - even_odd)
 			return (1);
 		i--;
 		j++;
