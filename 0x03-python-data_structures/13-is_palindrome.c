@@ -15,7 +15,7 @@ int is_palindrome(listint_t **head)
 	int i = 0;
 	int j = 0;
 	int even_odd = 0;
-	char numbers[100];
+	char numbers[1000];
 
 	if (head == NULL)
 		return (0);
