@@ -4,7 +4,7 @@ Foundations - Higher-level programming  Python
 
 By Guillaume, CTO at Holberton School
 
-Author [Carlos Andres Polania](https://twitter.com/timberdev)
+Author [Carlos Andres Polania (capolaniaq@correo.udistrital.edu.co)](https://twitter.com/timberdev)
 
 ## Learning Objectives
 
