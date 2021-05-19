@@ -3,6 +3,7 @@
 
 
 class Square:
+    """class Square with a private attrivute size"""
     def __init__(self, size=0):
         """Function to validade of the size square"""
         self.__size = size
