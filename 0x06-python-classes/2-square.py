@@ -8,8 +8,8 @@ class Square:
         """Function to validade of the size square"""
         self.__size = size
         if type(size) is not int:
-            print ("size must be an integer", end="")
+            print("size must be an integer", end="")
             raise TypeError
         elif size < 0:
-            print ("size must be >= 0", end="")
+            print("size must be >= 0", end="")
             raise ValueError
