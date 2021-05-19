@@ -1,3 +1,7 @@
+#!/usr/bin/python3
+"""Module that declare class Square with a private instance attribute size:"""
+
+
 class Square:
     """class Square with a private attrivute size"""
     def __init__(self, size=0):
