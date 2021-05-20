@@ -34,8 +34,8 @@ class Square:
         """Function that print of the square with a symbol #"""
         if self.__size == 0:
             print()
-        for i in range(0, self.__size):
-            for i in range(0, self.__size):
+        for i in range(0, self.__size -1):
+            for i in range(0, self.__size -1):
                 print("#", end="")
             print("#", end="")
             print()
