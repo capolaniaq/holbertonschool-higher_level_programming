@@ -2,6 +2,10 @@
 Foundations - Higher-level programming ― Python
 
 By Guillaume, CTO at Holberton School
+
+[Carlos Andres Polania](https://twitter.com/timberdev) (capolaniaq@correo.udistrital.edu.co)
+
+Author (Carlos Andres Polania)[]
 ## Learning Objectives
 -   Why Python programming is awesome
 -   What is OOP
