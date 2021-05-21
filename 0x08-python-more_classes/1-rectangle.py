@@ -11,20 +11,6 @@ class Rectangle:
         self.__height = height
 
     @property
-    def width(self):
-        """Function that validade fo the width"""
-        return self.__width
-
-    @width.setter
-    def width(self, value):
-        """Function that validade fo the width"""
-        if type(value) is not int:
-            raise TypeError("width must be an integer")
-        elif value < 0:
-            raise ValueError("width must be >= 0")
-        self.__width = value
-
-    @property
     def height(self):
         """Function that validade fo the height"""
         return self.__height
@@ -33,7 +19,25 @@ class Rectangle:
     def height(self, value):
         """Function that validade fo the height"""
         if type(value) is not int:
-            raise TypeError("width must be an integer")
-        elif value < 0:
-            raise ValueError("width must be >= 0")
+            print("width must be an integer", end="")
+            raise TypeError
+        if value < 0:
+            print("width must be >= 0", end="")
+            raise ValueError
         self.__height = value
+
+    @property
+    def width(self):
+        """Function that validade fo the width"""
+        return self.__width
+
+    @width.setter
+    def width(self, value):
+        """Function that validade fo the width"""
+        if type(value) is not int:
+            print("width must be an integer", end="")
+            raise TypeError
+        if value < 0:
+            print("width must be >= 0", end="")
+            raise ValueError
+        self.__width = value
