@@ -5,9 +5,10 @@
 class Square:
     """class Square with a private attrivute size"""
 
-    def __init__(self, size=0):
+    def __init__(self, size=0, position=(0, 0)):
         """Function to validade of the size square"""
         self.__size = size
+        self.__position = position
 
     @property
     def size(self):
@@ -24,15 +25,6 @@ class Square:
             raise ValueError("size must be >= 0")
         self.__size = value
 
-    def area(self):
-        """Function to return of the area square"""
-        return self.__size * self.__size
-
-    def __init__(self, size=0, position=(0, 0)):
-        """Function to validade of the size square"""
-        self.__size = size
-        self.__position = position
-
     @property
     def position(self):
         return self.__position
@@ -46,6 +38,10 @@ class Square:
         elif not isinstance(value, tuple) or len(value) != 2:
             raise TypeError("position must be a tuple of 2 positive integers")
         self.__position = value
+
+    def area(self):
+        """Function to return of the area square"""
+        return self.__size * self.__size
 
     def my_print(self):
         """Function that print of the square with a symbol #"""
