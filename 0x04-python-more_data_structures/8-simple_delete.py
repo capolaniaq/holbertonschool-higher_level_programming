@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 def simple_delete(a_dictionary, key=""):
     new_dictionary = a_dictionary
     if key in a_dictionary:
