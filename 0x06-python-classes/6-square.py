@@ -45,17 +45,18 @@ class Square:
 
     def my_print(self):
         """Function that print of the square with a symbol #"""
-        if self.__position is None or self.__position[0] == 0:
-            position = 0
-        else:
-            position = self.__position[0]
         if self.__size == 0:
             print()
-        for j in range(self.__position[1]):
-            print()
-        for i in range(0, self.__size):
-            for x in range(position):
-                print(end=" ")
-            for i in range(0, self.__size - 1):
-                print("#", end="")
-            print("#")
+        else:
+            if self.__position is None or self.__position[0] == 0:
+                position = 0
+            else:
+                position = self.__position[0]
+            for j in range(self.__position[1]):
+                print()
+            for i in range(0, self.__size):
+                for x in range(position):
+                    print(end=" ")
+                for i in range(0, self.__size - 1):
+                    print("#", end="")
+                print("#")
