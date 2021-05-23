@@ -2,7 +2,7 @@
 def roman_to_int(roman_string):
     roman_numbers = [1, 5, 10, 50, 100, 500, 1000]
     roman_letter = ['I', 'V', 'X', 'L', 'C', 'D', 'M']
-    if type(roman_string[0]) is not int or roman_string[0] is None:
+    if type(roman_string[0]) is not str or roman_string[0] is None:
         return 0
     integer = 0
     lenght = len(roman_string)
