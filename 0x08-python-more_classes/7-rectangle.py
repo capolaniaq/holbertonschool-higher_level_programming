@@ -57,13 +57,12 @@ class Rectangle:
 
     def __str__(self):
         """Function that return representation of the rectangle with #"""
-
         Rectangleprint = ""
         if self.height == 0 or self.width == 0:
             return Rectangleprint
         for h in range(0, self.height):
             for w in range(0, self.width):
-                Rectangleprint += self.print_symbol
+                Rectangleprint += str(self.print_symbol)
             Rectangleprint += "\n"
         return Rectangleprint[:-1]
 
