@@ -30,8 +30,18 @@ integers/floats"
             )
         if len(matrix[i]) != len(matrix[0]):
             raise TypeError("Each row of the matrix must have the same size")
+        if len(matrix[i]) == 0:
+            raise TypeError(
+                "matrix must be a matrix (list of lists) of \
+integers/floats"
+            )
         for x in matrix[i]:
             if type(x) is not int and type(x) is not float:
+                raise TypeError(
+                    "matrix must be a matrix (list of lists)of \
+integers/floats"
+                    )
+            elif x is None:
                 raise TypeError(
                     "matrix must be a matrix (list of lists)of \
 integers/floats"
