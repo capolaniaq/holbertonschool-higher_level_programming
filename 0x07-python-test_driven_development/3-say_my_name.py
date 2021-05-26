@@ -1,5 +1,14 @@
 #!/usr/bin/python3
+"""
+Module that contain the fucntion say_my_name
+"""
+
+
 def say_my_name(first_name, last_name=""):
+    """Function that print the name
+    if is only introduce a firts number, should print only these
+    if case againts print the two
+    """
     if last_name:
         if type(first_name) is not str:
             raise TypeError("first_name must be a string")
