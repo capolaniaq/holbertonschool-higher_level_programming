@@ -50,6 +50,11 @@ integers/floats"
         raise TypeError("div must be a number")
     if div < 0:
         raise ZeroDivisionError("division by zero")
+    if len(matrix) == 0:
+        raise TypeError(
+            "matrix must be a matrix (list of lists) of \
+integers/floats"
+            )
     for i, row in enumerate(matrix):
         for x, number in enumerate(row):
             new_row.append(round((number / div), 2))
