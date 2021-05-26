@@ -38,12 +38,12 @@ integers/floats"
         for x in matrix[i]:
             if type(x) is not int and type(x) is not float:
                 raise TypeError(
-                    "matrix must be a matrix (list of lists)of \
+                    "matrix must be a matrix (list of lists) of \
 integers/floats"
                     )
             elif x is None:
                 raise TypeError(
-                    "matrix must be a matrix (list of lists)of \
+                    "matrix must be a matrix (list of lists) of \
 integers/floats"
                     )
     if type(div) is not int and type(div) is not float:
