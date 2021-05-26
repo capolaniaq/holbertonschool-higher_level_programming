@@ -63,7 +63,7 @@ division by zero or diferent integer/float
     >>> matrix_divided([[1.2, 2.2, 3.4],[5.4,6.7,9.8]], 0)
     Traceback (most recent call last):
                 ...
-    ZeroDivisionError: float division by zero
+    ZeroDivisionError: division by zero
 
     >>> matrix_divided([[1,2,3], [1,2,3]], "python")
     Traceback (most recent call last):
