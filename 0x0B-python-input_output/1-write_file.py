@@ -7,6 +7,6 @@ def write_file(filename="", text=""):
 
     text = str(text)
     lenght = len(text)
-    with open("my_first_file.txt", "w") as myfile:
+    with open(filename, "w") as myfile:
         myfile.write(text)
     return lenght
