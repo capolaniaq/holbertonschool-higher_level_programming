@@ -1,7 +1,9 @@
 # 0x0A. Python - Inheritance
 
 Foundations - Higher-level programming ― Python
+
 By Guillaume, CTO at Holberton School
+
 Author [Carlos Andres Polania](https://twitter.com/timberdev) (capolaniaq@correo.udistrital.edu.co)
 
 
