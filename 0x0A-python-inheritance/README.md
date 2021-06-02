@@ -3,6 +3,9 @@
 Foundations - Higher-level programming ― Python
 By Guillaume, CTO at Holberton School
 Author [Carlos Andres Polania](https://twitter.com/timberdev) (capolaniaq@correo.udistrital.edu.co)
+
+![enter image description here](https://www.python-course.eu/images/vehicles_classification_800w.webp)
+
 ## Learning Objectives
 -   Why Python programming is awesome
 -   What is a superclass, baseclass or parentclass
