@@ -4,7 +4,6 @@ Foundations - Higher-level programming ― Python
 By Guillaume, CTO at Holberton School
 Author [Carlos Andres Polania](https://twitter.com/timberdev) (capolaniaq@correo.udistrital.edu.co)
 
-![enter image description here](https://www.python-course.eu/images/vehicles_classification_800w.webp)
 
 ## Learning Objectives
 -   Why Python programming is awesome
@@ -19,6 +18,11 @@ Author [Carlos Andres Polania](https://twitter.com/timberdev) (capolaniaq@correo
 -   Which attributes or methods are available by heritage to subclasses
 -   What is the purpose of inheritance
 -   What are, when and how to use  `isinstance`,  `issubclass`,  `type`  and  `super`  built-in functions
+
+
+![enter image description here](https://www.python-course.eu/images/vehicles_classification_800w.webp)
+
+
 
 ## Tasks
 ### 0. Lookup
