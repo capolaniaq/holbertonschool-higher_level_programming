@@ -39,3 +39,43 @@ test
     Traceback (most recent call last):
             ...
     NameError: name 'NULL' is not defined
+
+    >>> bg.integer_validator(“age”)
+      File "<stdin>", line 1
+            ...
+    SyntaxError: invalid character in identifier
+
+    >>> bg.integer_validator("name",[1])
+    Traceback (most recent call last):
+            ...
+    TypeError: name must be an integer
+
+    >>> bg.integer_validator("name","1")
+    Traceback (most recent call last):
+            ...
+    TypeError: name must be an integer
+
+    >>> bg.integer_validator()
+    Traceback (most recent call last):
+            ...
+    TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+    >>> bg.integer_validator(“age”, None)
+      File "<stdin>", line 1
+            ...
+    SyntaxError: invalid character in identifier
+
+    >>> bg.integer_validator(“age”, {3,2})
+      File "<stdin>", line 1
+            ...
+    SyntaxError: invalid character in identifier
+
+    >>> bg.integer_validator(“age”, True)
+      File "<stdin>", line 1
+            ...
+    SyntaxError: invalid character in identifier
+
+    >>> bg.area(2)
+    Traceback (most recent call last):
+            ...
+    TypeError: area() takes 1 positional argument but 2 were given
