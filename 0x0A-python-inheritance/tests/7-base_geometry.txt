@@ -41,7 +41,7 @@ test
     NameError: name 'NULL' is not defined
 
     >>> bg.integer_validator(“age”)
-      File "<stdin>", line 1
+    Traceback (most recent call last):
             ...
     SyntaxError: invalid character in identifier
 
@@ -61,17 +61,17 @@ test
     TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
 
     >>> bg.integer_validator(“age”, None)
-      File "<stdin>", line 1
+    Traceback (most recent call last):
             ...
     SyntaxError: invalid character in identifier
 
     >>> bg.integer_validator(“age”, {3,2})
-      File "<stdin>", line 1
+    Traceback (most recent call last):
             ...
     SyntaxError: invalid character in identifier
 
     >>> bg.integer_validator(“age”, True)
-      File "<stdin>", line 1
+    Traceback (most recent call last):
             ...
     SyntaxError: invalid character in identifier
 
