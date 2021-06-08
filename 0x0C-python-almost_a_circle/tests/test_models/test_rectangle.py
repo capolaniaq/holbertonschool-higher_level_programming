@@ -27,8 +27,11 @@ class TestRectangle(unittest.TestCase):
         b4 = Rectangle(10, 12, 1, 1, 5)
         self.assertEqual((b4.x, b4.y, b4.id), (1, 1, 5))
 
-    def test_area(self):
-        """test_area public method"""
+class test_area(unittest.TestCase):
+    """test_area public method"""
+
+    def test_area_three_cases(self):
+        """test_area_three_cases"""
         b5 = Rectangle(3, 2)
         self.assertEqual((b5.area()), (6))
         b6 = Rectangle(2, 10)
