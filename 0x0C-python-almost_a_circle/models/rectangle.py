@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """Module that created a Class Rectangle"""
+
+
 from models.base import Base
 
 
