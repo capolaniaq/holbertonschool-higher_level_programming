@@ -8,7 +8,6 @@ class Rectangle(Base):
 
     def __init__(self, width, height, x=0, y=0, id=None):
         """__init"""
-
         self.width = width
         self.height = height
         self.x = x
@@ -18,13 +17,11 @@ class Rectangle(Base):
     @property
     def width(self):
         """ width"""
-
         return self.__width
 
     @width.setter
     def width(self, value):
         """ width"""
-
         self.__width = value
         if type(value) is not int:
             raise TypeError("width must be an integer")
@@ -35,13 +32,11 @@ class Rectangle(Base):
     @property
     def height(self):
         """Height"""
-
         return self.__height
 
     @height.setter
     def height(self, value):
         """Height"""
-
         self.__height = value
         if type(value) is not int:
             raise TypeError("height must be an integer")
@@ -52,13 +47,11 @@ class Rectangle(Base):
     @property
     def x(self):
         """x"""
-
         return self.__x
 
     @x.setter
     def x(self, value):
         """x"""
-
         self.__x = value
         if type(value) is not int:
             raise TypeError("x must be an integer")
@@ -69,13 +62,11 @@ class Rectangle(Base):
     @property
     def y(self):
         """y"""
-
         return self.__y
 
     @y.setter
     def y(self, value):
         """y"""
-
         self.__y = value
         if type(value) is not int:
             raise TypeError("y must be an integer")
@@ -85,5 +76,4 @@ class Rectangle(Base):
 
     def area(self):
         """Area"""
-
-        return self.height * self.width
+        return (self.height * self.width)
