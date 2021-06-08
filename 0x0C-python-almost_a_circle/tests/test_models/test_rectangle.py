@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Test_rectangle"""
+"""Module that Test_rectangle class"""
 import unittest
 from models.rectangle import Rectangle
 
