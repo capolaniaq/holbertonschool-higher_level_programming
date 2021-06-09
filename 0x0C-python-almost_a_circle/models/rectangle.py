@@ -96,3 +96,17 @@ class Rectangle(Base):
         """Return Str print"""
         return ("[Rectangle] ({}) {}/{} - \
 {}/{}".format(self.id, self.x, self.y, self.width, self.height))
+
+    def update(self, *args):
+        """Function that update the attributes that args"""
+        for position, arg in enumerate(args):
+            if position == 0:
+                self.id = arg
+            elif position == 1:
+                self.width = arg
+            elif position == 2:
+                self.height = arg
+            elif position == 3:
+                self.x = arg
+            else:
+                self.y = arg
