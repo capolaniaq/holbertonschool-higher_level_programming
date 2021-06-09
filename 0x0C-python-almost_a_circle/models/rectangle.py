@@ -83,7 +83,11 @@ class Rectangle(Base):
     def display(self):
         """function that print the  rectangle with #
         character"""
+        for y in range(self.y):
+            print()
         for row in range(self.height):
+            for x in range(self.x):
+                print(end=" ")
             for column in range(self.width):
                 print("#", end="")
             print()
@@ -91,3 +95,4 @@ class Rectangle(Base):
     def __str__(self):
         return ("[Rectangle] ({}) {}/{} - \
 {}/{}".format(self.id, self.x, self.y, self.width, self.height))
+
