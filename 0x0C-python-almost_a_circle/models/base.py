@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """Module that created a Class Base"""
 
+import json
+
 
 class Base:
     """Class Base"""
@@ -12,3 +14,9 @@ class Base:
         if id is None:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
+
+    def to_json_string(list_dictionaries):
+        """Function that return a JSON object as string"""
+        if list_dictionaries is None:
+            return []
+        return json.dumps(list_dictionaries)
