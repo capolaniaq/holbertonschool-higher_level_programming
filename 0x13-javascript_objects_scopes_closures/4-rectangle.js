@@ -19,7 +19,7 @@ class Rectangle {
   }
 
   double () {
-    this.height = this.heighth * 2;
+    this.height = this.height * 2;
     this.width = this.width * 2;
   }
 
