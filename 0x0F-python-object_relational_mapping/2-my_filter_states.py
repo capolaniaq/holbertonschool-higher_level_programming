@@ -13,7 +13,7 @@ if __name__ == "__main__":
         passwd=password, db=database, charset="utf8")
     cursor = db.cursor()
     sql = ("SELECT states.id, name FROM states WHERE\
-        name = '{}'".format(argv[4]))
+        name = '{}' ORDER BY states.id ASC".format(argv[4]))
     cursor.execute(sql)
     results = cursor.fetchall()
     for row in results:
