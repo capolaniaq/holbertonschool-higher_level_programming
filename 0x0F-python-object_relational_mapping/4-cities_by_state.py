@@ -13,8 +13,8 @@ if __name__ == "__main__":
         passwd=password, db=database, charset="utf8")
     cursor = db.cursor()
     sql = ("""SELECT cities.id, cities.name, states.name
-        FROM cities JOIN states \
-        ON cities.state_id = states.id \
+        FROM cities
+        JOIN states ON cities.state_id = states.id
         ORDER BY cities.id ASC;""")
     cursor.exucute(sql)
     results = cursor.fetchall()
