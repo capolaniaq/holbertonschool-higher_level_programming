@@ -14,7 +14,7 @@ if __name__ == "__main__":
     cursor = db.cursor()
     sql = ("""SELECT cities.name FROM cities JOIN states
         ON cities.state_id = states.id
-        AND states.name = %s
+        WHERE states.name = %s
         ORDER BY cities.id""")
     argument = (argv[4], )
     cursor.execute(sql, argument)
