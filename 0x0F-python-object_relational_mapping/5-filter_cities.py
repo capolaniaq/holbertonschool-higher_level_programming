@@ -18,7 +18,7 @@ if __name__ == "__main__":
     argument = (argv[4], )
     cursor.execute(sql, argument)
     results = cursor.fetchall()
-    for row, x in enumerate(results):
+    for x, row in enumerate(results):
         if x == len(results) - 1:
             print("{}".format(row[0]))
         else:
