@@ -12,9 +12,10 @@ if __name__ == "__main__":
         host="localhost", port=3306, user=users,
         passwd=password, db=database, charset="utf8")
     cursor = db.cursor()
-    sql = ("SELECT cities.name FROM cities, states \
-        WHERE cities.state_id = states.id AND states.name = %s \
-        ORDER BY cities.id")
+    sql = ("""SELECT cities.name FROM cities, states \
+        WHERE cities.state_id = states.id
+        AND states.name lIKE BINARY %s \
+        ORDER BY cities.id""")
     argument = (argv[4], )
     cursor.execute(sql, argument)
     results = cursor.fetchall()
