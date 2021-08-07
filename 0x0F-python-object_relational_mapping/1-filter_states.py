@@ -13,7 +13,7 @@ if __name__ == "__main__":
         host="localhost", port=3306, user=users,
         passwd=password, db=database, charset="utf8")
     cursor = db.cursor()
-    sql = ("SELECT states.id, states.name FROM states WHERE name LIKE 'N%'\
+    sql = ("SELECT states.id, states.name FROM states WHERE name LIKE BINARY 'N%'\
     ORDER BY states.id ASC")
     cursor.execute(sql)
     results = cursor.fetchall()
