@@ -3,7 +3,7 @@
 from sqlalchemy import create_engine, Column, Integer, String, MetaData
 from sqlalchemy.ext.declarative import declarative_base
 
-engine = create_engine("mysql://root:root@localhost:3306/db")
+
 Base = declarative_base()
 
 
