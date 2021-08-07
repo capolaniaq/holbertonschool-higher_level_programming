@@ -13,7 +13,8 @@ if __name__ == "__main__":
         passwd=password, db=database, charset="utf8")
     cursor = db.cursor()
     cursor.exucute("SELECT states.id, name FROM states WHERE\
-        name = %(argument)s ORDER BY states.id ASC", {'argument': argv[4]})
+        name LIKE BINARY %(argument)s ORDER BY \
+        states.id ASC", {'argument': argv[4]})
     results = cursor.fetchall()
     for row in results:
         print(row)
