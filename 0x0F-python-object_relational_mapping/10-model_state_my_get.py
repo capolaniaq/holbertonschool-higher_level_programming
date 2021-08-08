@@ -22,6 +22,4 @@ if __name__ == "__main__":
             break
         if x == len(states) - 1:
             print("Not found")
-
-
     session.close()
