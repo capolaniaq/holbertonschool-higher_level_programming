@@ -20,4 +20,3 @@ if __name__ == "__main__":
     states = records.all()
     for state in states:
         print("{}: {}".format(state.id, state.name))
-    session.close()
