@@ -18,7 +18,7 @@ if __name__ == "__main__":
     states = session.query(State).order_by(State.id).all()
     for x, state in enumerate(states):
         if state.name == argv[4]:
-            print("{}: {}".format(state.id, state.name))
+            print("{}".format(state.id))
             break
         if x == len(states) - 1:
             print("Not found")
