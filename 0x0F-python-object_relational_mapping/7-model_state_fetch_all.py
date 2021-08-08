@@ -2,21 +2,21 @@
 """Start link class to table in database """
 
 
-from sqlalchemy.orm import sessionmaker
-from model_state import Base, State
-from sys import argv
-from sqlalchemy import create_engine
-
-
 if __name__ == "__main__":
-    user = argv[1]
-    password = argv[2]
-    database = argv[3]
+    from sqlalchemy.orm import sessionmaker
+    from model_state import Base, State
+    import sys
+    from sqlalchemy import create_engine
+
+
+    user = sys.argv[1]
+    password = sys.argv[2]
+    database = sys.argv[3]
     engine = create_engine("mysql+mysqldb://{}:{}@localhost:3306/{}".format(
         user, password, database), pool_pre_ping=True)
     Session = sessionmaker(bind=engine)
     session = Session()
-    records = session.query(State).order_by(State.id)
-    states = records.all()
-    for state in states:
-        print("{:d}: {:s}".format(state.id, state.name))
+    for state in session.query(State).order_by(State.id).all():
+        print("{}: {}".format(state.id, state.name))
+
+    session.close()
