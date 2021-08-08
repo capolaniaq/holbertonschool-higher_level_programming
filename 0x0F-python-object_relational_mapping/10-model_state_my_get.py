@@ -15,11 +15,9 @@ if __name__ == "__main__":
         user, password, database), pool_pre_ping=True)
     Session = sessionmaker(bind=engine)
     session = Session()
-    states = session.query(State).order_by(State.id).all()
-    for x, state in enumerate(states):
-        if state.name == argv[4]:
-            print("{}".format(state.id))
-            break
-        if x == len(states) - 1:
-            print("Not found")
+    states = session.query(State).filter(State.name == argv[4]).first()
+    if states is not None:
+        print("{}".format(states.id))
+    else:
+        print("Not found")
     session.close()
