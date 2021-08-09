@@ -19,6 +19,7 @@ if __name__ == "__main__":
     states = session.query(State).all()
     for state in states:
         if 'a' in state.name:
-            session.query(State).filter(State.id == state.id).delete()
+            kill = session.query(State).filter(State.id == state.id).first()
+            session.delete(kill)
             session.commit()
     session.close()
