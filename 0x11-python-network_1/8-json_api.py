@@ -2,7 +2,6 @@
 """Python script that fetches https://intranet.hbtn.io/status
 use the request"""
 
-from json.decoder import JSONDecodeError
 import requests
 import sys
 
