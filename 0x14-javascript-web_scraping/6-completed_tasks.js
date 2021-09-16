@@ -7,7 +7,6 @@ let taskdone = 0;
 
 request.get(process.argv[2], function (error, response, body) {
   if (error) {
-    console.log(error);
   } else {
     const tasks = JSON.parse(body);
     tasks.forEach(element => {
